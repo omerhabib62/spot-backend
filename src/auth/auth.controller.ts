@@ -19,26 +19,31 @@ export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
   @Post('register')
+  @HttpCode(HttpStatus.ACCEPTED)
   register(@Body() dto: RegisterDto) {
     return this.authService.register(dto);
   }
 
   @Post('login')
+  @HttpCode(HttpStatus.ACCEPTED)
   login(@Body() dto: LoginDto) {
     return this.authService.login(dto);
   }
 
   @Post('employee/login')
+  @HttpCode(HttpStatus.ACCEPTED)
   employeeLogin(@Body() dto: LoginDto) {
     return this.authService.employeeLogin(dto);
   }
 
   @Post('verify')
+  @HttpCode(HttpStatus.OK)
   verify(@Body() dto: VerifyMagicLinkDto) {
     return this.authService.verify(dto);
   }
 
   @Post('resend')
+  @HttpCode(HttpStatus.ACCEPTED)
   resend(@Body() dto: ResendMagicLinkDto) {
     return this.authService.resend(dto);
   }

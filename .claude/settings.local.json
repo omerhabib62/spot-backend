@@ -7,7 +7,10 @@
       "Bash(npm install @nestjs/config @nestjs/typeorm typeorm pg class-validator class-transformer @nestjs/passport passport passport-jwt @nestjs/jwt multer)",
       "Bash(npm install -D @types/passport-jwt @types/multer)",
       "Bash(npm test)",
-      "Bash(npm run lint)"
+      "Bash(npm run lint)",
+      "Bash(docker-compose up -d)",
+      "Bash(node -e \"console.log\\(require\\(''./node_modules/pg/package.json''\\).version\\)\")",
+      "Read(//c/Users/omerh/.claude/plans/**)"
     ]
   }
 }
