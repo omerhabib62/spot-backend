@@ -3,7 +3,11 @@
     "allow": [
       "Bash(npx tsc --noEmit)",
       "Bash(npx nest build)",
-      "Bash(python -c \"import sys,json; data=json.load\\(sys.stdin\\); print\\(data[0][''text'']\\)\")"
+      "Bash(python -c \"import sys,json; data=json.load\\(sys.stdin\\); print\\(data[0][''text'']\\)\")",
+      "Bash(npm install @nestjs/config @nestjs/typeorm typeorm pg class-validator class-transformer @nestjs/passport passport passport-jwt @nestjs/jwt multer)",
+      "Bash(npm install -D @types/passport-jwt @types/multer)",
+      "Bash(npm test)",
+      "Bash(npm run lint)"
     ]
   }
 }
